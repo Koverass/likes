@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Likes</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+        <h2>Network</h2>
+    </header>
+
+    <main>
+        <h1>Your Feed</h1>
+
+        <!--AVATAR JAMES DOE-->
+        <div class="contenedor flex">
+            <aside class="caja">
+                <div>
+                    <img src="icons/user-circle.png" alt="User icon" width="80">
+                </div>
+                <a href="#">Add an avatar</a>
+                <h2>James Doe</h2>
+            </aside>
+            
+            <article>
+                <!--LIKE 1 -->
+                <section class="caja">
+                    <div class="flex header">
+                        <div class="flex user">
+                            <h2>Neil M</h2>
+                            <h4><span id="contador1">9</span> like(s)</h4>
+                        </div>
+                        <button data-count="like-1" class="btn-like" onclick="like1()">Like</button>
+                    </div>
+                    <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </section>
+
+                <!--LIKE 2 -->
+                <section class="caja">
+                    <div class="flex header">
+                        <div class="flex user">
+                            <h2>Nichole K</h2>
+                            <h4><span id="contador2">12</span> like(s)</h4>
+                        </div>
+                        <button data-count="like-2" class="btn-like" onclick="like2()">Like</button>
+                    </div>
+                    <p>Just Finished my <a href="#">next comic</a>, check it out.</p>
+                </section>
+
+                <!--LIKE 3 -->
+                <section class="caja">
+                    <div class="flex header">
+                        <div class="flex user">
+                            <h2>Jim R</h2>
+                            <h4><span id="contador3">9</span> like(s)</h4>
+                        </div>
+                        <button data-count="like-3" class="btn-like" onclick="like3()">Like</button>
+                    </div>
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </section>
+            </article>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
